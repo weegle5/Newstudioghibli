@@ -1,0 +1,44 @@
+.menu {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 28px;
+    height: 28px;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transform: background-color 0.2s;
+
+    &:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+
+    &__line {
+        height: 3px;
+        background-color: white;
+        flex: 0 0 4px;
+    }
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.log-in-button {
+    color: white;
+    line-height: 20px;
+    font-weight: 700;
+    border: 1px solid white;
+    padding: 16px 30px;
+    transition: all 0.2s;
+    margin-left: 40px;
+
+    &:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+        color: $secondary-color;
+    }
+}

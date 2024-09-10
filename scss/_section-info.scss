@@ -1,0 +1,32 @@
+.section-info {
+    text-align: center;
+    padding-bottom: 14px;
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: clamp(16px, 2vw, 20px);
+    }
+    
+    @media (min-width: 768px) {
+        p {
+            max-width: 65ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media(min-width: 1920px) {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin: 30px;
+
+        p {
+            text-align: center;
+            margin-right: 30px;
+            max-width: 34ch;
+
+        }
+}
+}

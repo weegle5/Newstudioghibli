@@ -1,0 +1,206 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  max-width: 1920px;
+  margin: auto;
+}
+@media (max-width: 1023px) {
+  .header .log-in-button,
+  .header .top-navigation {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Merriweather";
+  font-size: 16px;
+  line-height: 24px;
+  background-image: url("../img/wallpaper3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: clamp(39px, 5vw, 61px);
+  line-height: clamp(100px, 5vw, 73px);
+  font-weight: 900;
+}
+@media (min-width: 768px) {
+  h1 {
+    max-width: 10ch;
+    margin: auto;
+  }
+}
+@media (min-width: 1920px) {
+  h1 {
+    max-width: 34ch;
+  }
+}
+
+h2 {
+  font-size: clamp(30px, 5vw, 61px);
+  font-weight: 600;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+main {
+  max-width: 100%;
+  margin: auto;
+  padding: 60px 25px;
+  color: white;
+}
+
+.mainfoto {
+  width: 100%;
+  height: clamp(17.5rem, 58.6vw, 31.875rem);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  max-width: 1920px;
+  margin-top: 100px;
+  padding: 45px 10px 25px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.menu {
+  background-color: transparent;
+  border: 1px solid white;
+  width: 28px;
+  height: 28px;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transform: background-color 0.2s;
+}
+.menu:hover {
+  background-color: rgb(186, 201, 252);
+  border-color: rgb(186, 201, 252);
+}
+.menu__line {
+  height: 3px;
+  background-color: white;
+  flex: 0 0 4px;
+}
+@media (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+
+.log-in-button {
+  color: white;
+  line-height: 20px;
+  font-weight: 700;
+  border: 1px solid white;
+  padding: 16px 30px;
+  transition: all 0.2s;
+  margin-left: 40px;
+}
+.log-in-button:hover {
+  background-color: rgb(186, 201, 252);
+  border-color: rgb(186, 201, 252);
+  color: rgb(29, 66, 122);
+}
+
+.top-navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.top-navigation li a {
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+.top-navigation li a:hover {
+  color: rgb(186, 201, 252);
+  border-bottom-color: rgb(29, 66, 122);
+}
+
+.section-info {
+  text-align: center;
+  padding-bottom: 14px;
+}
+.section-info p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: clamp(16px, 2vw, 20px);
+}
+@media (min-width: 768px) {
+  .section-info p {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1920px) {
+  .section-info {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 30px;
+  }
+  .section-info p {
+    text-align: center;
+    margin-right: 30px;
+    max-width: 34ch;
+  }
+}
+
+.section-films {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: clamp(16px, 1.2vw, 20px);
+  text-align: center;
+  background-color: rgb(186, 201, 252);
+  row-gap: 35px;
+}
+@media (min-width: 768px) {
+  .section-films {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    text-align: center;
+  }
+}
+@media (min-width: 1920px) {
+  .section-films {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    text-align: center;
+    row-gap: 55px;
+  }
+}
+
+.section-films img {
+  width: 100%;
+  height: clamp(10.5rem, 58.6vw, 31.875rem);
+}/*# sourceMappingURL=style.css.map */

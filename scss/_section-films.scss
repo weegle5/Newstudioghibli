@@ -1,0 +1,29 @@
+
+.section-films {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: clamp(16px, 1.2vw ,20px);      
+    text-align: center;
+    background-color: $primary-color;
+    row-gap: 35px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        text-align: center;
+    }
+
+    @media (min-width: 1920px) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    text-align: center;
+    row-gap: 55px;
+    }
+}
+
+.section-films img {
+    width: 100%;
+    height: clamp(10.5rem, 58.6vw, 31.875rem);
+    }
+
+    
